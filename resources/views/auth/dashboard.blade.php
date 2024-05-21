@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Login Pengguna')
 @section('content')
     <div class="row justify-content-center mt-5">
         <form action="{{ route('logout') }}" method="post">
