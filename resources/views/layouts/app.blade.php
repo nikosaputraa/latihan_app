@@ -5,11 +5,15 @@
     <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
     <link rel="stylesheet" type="text/css" href="/web-template/default.css" media="screen" />
     <title>@yield('title')</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jqueryui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
 </head>
 
 <body>
     <div class="container">
-        
+
         <div class="gfx"><span></span></div>
         <div class="top">
             <div class="navigation"> <a href="#" id="selected">home</a> <a href="#">the journey</a> <a
@@ -24,6 +28,8 @@
         <div class="content">
             <div class="spacer"></div>
             @yield('content')
+            <div class="spacer"></div>
+            <div class="spacer"></div>
             <div class="spacer"></div>
             <div class="item">
                 <div class="title">Porttitor posuere</div>
