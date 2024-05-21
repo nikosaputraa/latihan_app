@@ -20,9 +20,10 @@ class RakBukuController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         $rak = RakBuku::all();
+        $this->pre($request->session()->all());
         return view('rak_buku.index', ['rak' => $rak]);
     }
 
